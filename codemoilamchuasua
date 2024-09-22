@@ -1,0 +1,10 @@
+create table khachhang (
+    ma khach hang varchar(20) primary key,
+    hokhachhang(50),
+    tenkhachhang varchar(50),
+    socccd varchar(20) CHECK (LENGTH ( soCCCD) = 12)
+    dia chi varchar(100),
+    dienthoai varchar(15) check (dienthoai like '0%')
+    ngaysinh date,
+    unique (socccd)
+    );
